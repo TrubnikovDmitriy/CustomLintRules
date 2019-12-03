@@ -1,0 +1,12 @@
+apply plugin: 'kotlin'
+
+dependencies {
+    compileOnly "com.android.tools.lint:lint-api:$lintVersion"
+    testImplementation "com.android.tools.lint:lint-tests:$lintVersion"
+}
+
+jar {
+    manifest {
+        attributes("Lint-Registry-v2": "custom.lint.rules.CustomIssueRegistry")
+    }
+}
