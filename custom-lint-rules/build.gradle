@@ -5,8 +5,8 @@ dependencies {
     testImplementation "com.android.tools.lint:lint-tests:$lintVersion"
 }
 
-jar {
-    manifest {
-        attributes("Lint-Registry-v2": "custom.lint.rules.CustomIssueRegistry")
-    }
-}
+//jar {
+//    manifest {
+//        attributes("Lint-Registry-v2": "custom.lint.rules.CustomIssueRegistry")
+//    }
+//}
